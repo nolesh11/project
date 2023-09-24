@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
     color: #202020;
+    line-height: 140%;
 }
 
 a{
@@ -15,4 +16,44 @@ a{
 .orange{
     background: url(../assets/img/orange.png);
     background-repeat: no-repeat;
+    padding-top: calc(0.8vw + 8.36px);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 calc(22vw - 73px);
+    
+}
+
+.header_logo{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    gap: 74px;
+}
+
+.nav_links a{
+    margin-left: 37px;
+    font-size: 14px;
+}
+
+.nav_number{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.nav_btn{
+    background-color: #FF9646;
+    font-style: 14px;
+    font-weight: 500;
+    padding: 11px 17px;
+    color: #fff;
 }
