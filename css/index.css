@@ -319,6 +319,7 @@ section:nth-child(2){
 .stair_price{
     border: 2px solid #F4F4F4;
     transition: 1s;
+    margin-bottom: 30px;
 }
 
 .stair_price img{
@@ -354,6 +355,28 @@ section:nth-child(2){
     margin: 0 auto;
     margin-top: 15px;
 }
+
+.stairs_btn_mobile{
+    display: none;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+.stairs_btn_mobile div{
+    width: 10px;
+    height: 10px;
+    background-color: #FF9646;
+    transition: 1s;
+}
+.stairs_btn_mobile div:hover{
+    width: 20px;
+    height: 20px;
+    background-color: #222;
+}
+
+
 
 
 
@@ -392,4 +415,12 @@ section:nth-child(2){
     .second{
         display: none;
     }
+    .stair_slider{
+        display: none;
+    }
+    .stairs_btn_mobile{
+        display: flex;
+ 
+    }
+    
 }
