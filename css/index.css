@@ -358,7 +358,7 @@ section:nth-child(2){
 
 .stairs_btn_mobile{
     display: none;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
@@ -370,25 +370,11 @@ section:nth-child(2){
     background-color: #FF9646;
     transition: 1s;
 }
-.stairs_btn_mobile div:hover{
+.stairs_btn_mobile div:active{
     width: 20px;
     height: 20px;
     background-color: #222;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1180px){
     .element{
