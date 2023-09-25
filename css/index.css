@@ -296,7 +296,7 @@ section:nth-child(2){
     line-height: 120%;
 }
 
-.stair_btn{
+.stair_slider{
     display: flex;
 }
 .stick{
@@ -310,6 +310,63 @@ section:nth-child(2){
     margin: 14px 20px ;
 }
 
+.stairs_variaty{
+    display: flex;
+    gap: 0 30px;
+    justify-content: center;
+    
+}
+
+.stair_price{
+    border: 2px solid #F4F4F4;
+    transition: 1s;
+}
+
+.stair_price img{
+    padding: 46px 35px 0;
+}
+
+.stair_price:hover{
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.stair_info{
+    width: 100%;
+    margin-top: 44px;
+    text-align: center;
+    background-color: #F4F4F4;
+    padding: 20px 30px 38px;
+}
+
+.stair_info h5{
+    font-size: 23px;
+    font-weight: 600;
+}
+.stair_info span{
+    font-size: 14px;
+}
+.stair_btn{
+    padding: 15px 53px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #FF9646;
+    width: 191px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1180px){
     .element{
@@ -322,6 +379,9 @@ section:nth-child(2){
         border-right: 2px solid #F4F4F4;
         /* border-left: 1px solid #F4F4F4; */
     }
+    .third{
+        display: none;
+    }
 }
 
 @media (max-width: 770px) {
@@ -329,5 +389,8 @@ section:nth-child(2){
         border-top: 0;
         border-bottom: 0;
         border-left: 2px solid #F4F4F4;
+    }
+    .second{
+        display: none;
     }
 }
