@@ -224,7 +224,7 @@ nav{
 
 section:nth-child(2){
     position: relative;
-    
+    margin-bottom: calc(2.6vw + 69px);
 }
 .element{
     position: absolute;
@@ -276,7 +276,7 @@ section:nth-child(2){
     position: relative;
 }
 
-.stairs img{
+.rectangle{
     position: absolute;
     top: 23px;
     left: -50px;
