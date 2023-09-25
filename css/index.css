@@ -311,11 +311,23 @@ section:nth-child(2){
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1180px){
     .element{
         display: none;
     }
     .element2{
         display: none;
+    }
+    .works .work:nth-child(2){
+        border-right: 2px solid #F4F4F4;
+        /* border-left: 1px solid #F4F4F4; */
+    }
+}
+
+@media (max-width: 770px) {
+    .works .work:nth-child(2){
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 2px solid #F4F4F4;
     }
 }
