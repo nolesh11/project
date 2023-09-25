@@ -233,8 +233,8 @@ section:nth-child(2){
 }
 .element2{
     position: absolute;
+    top: 160px;
     left: 143px;
-    top: 150px;
 }
 
 .works{
@@ -308,4 +308,14 @@ section:nth-child(2){
 
 .color{
     margin: 14px 20px ;
+}
+
+
+@media (max-width: 1000px){
+    .element{
+        display: none;
+    }
+    .element2{
+        display: none;
+    }
 }
