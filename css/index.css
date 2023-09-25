@@ -17,11 +17,12 @@ a{
     background: url(../assets/img/orange.png);
     background-repeat: no-repeat;
     padding-top: calc(0.8vw + 8.36px);
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     /* padding-right: calc(22vw - 73px); */
     /* padding-left: calc(14.8vw - 62px); */
     background-size: calc(42.4vw - 78px) calc(-2.6vw + 901px);
     background-color: #F4F4F4;
+    
 }
 
 header{
@@ -154,7 +155,15 @@ nav{
     grid-area: b;
     width: calc(7px + 250px);
     margin: 0 50px 0 0;
+    position: relative;
 } 
+
+.main_info img{
+    width: calc(13.2vw + 262px);
+    position: absolute;
+    top: 210px;
+    right: 50px;
+}
 /* margin-right: calc(22vw - 73px); */
 
 .main_info span{
@@ -213,11 +222,33 @@ nav{
 
 /* 2 section */
 
-/* .works{
+section:nth-child(2){
+    position: relative;
+    
+}
+.element{
+    position: absolute;
+    right: 143px;
+    top: -50px;
+}
+.element2{
+    position: absolute;
+    left: 143px;
+    top: 150px;
+}
+
+.works{
     display: flex;
     flex-wrap: wrap;
-    width: calc(56vw + 145px);
-    margin: 0 auto;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: calc(3vw + 67px);
+    /* width: calc(56vw + 145px); */
+}
+
+.works .work:nth-child(2){
+    border-right: 0;
+    border-left: 0;
 }
 
 .work{
@@ -227,4 +258,54 @@ nav{
     display: flex;
     gap: 30px;
     padding: 40px 36px 40px 40px;
-} */
+    border: 2px solid #F4F4F4;
+    background: #FFF;
+    background: url(../assets/img/Rectangle\ 306.svg);
+    background-repeat: no-repeat;
+    background-position: top 60px left 30px;
+}
+
+.work h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.stairs{
+    margin: 0 calc(22vw - 73px);
+    position: relative;
+}
+
+.stairs img{
+    position: absolute;
+    top: 23px;
+    left: -50px;
+    z-index: -1;
+}
+
+.stair_type{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.stair_type h5{
+    font-size: calc(0.4vw + 27px);
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.stair_btn{
+    display: flex;
+}
+.stick{
+    height: 58px;
+    width: 4px;
+    background-color: #222;
+    border-radius: 2px;
+}
+
+.color{
+    margin: 14px 20px ;
+}
