@@ -11,6 +11,12 @@ a{
     text-decoration: none;
 }
 
+h2{
+    font-size: calc(0.8vw + 19px);
+    font-weight: 700;
+    line-height: 120%;
+}
+
 /* 1 section */
 
 .orange{
