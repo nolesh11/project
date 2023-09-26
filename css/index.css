@@ -17,6 +17,10 @@ h2{
     line-height: 120%;
 }
 
+.gray{
+    background-color: #F4F4F4;
+}
+
 /* 1 section */
 
 .orange{
@@ -27,7 +31,7 @@ h2{
     /* padding-right: calc(22vw - 73px); */
     /* padding-left: calc(14.8vw - 62px); */
     background-size: calc(42.4vw - 78px) calc(-2.6vw + 901px);
-    background-color: #F4F4F4;
+    
     
 }
 
@@ -416,3 +420,6 @@ section:nth-child(2){
     }
     
 }
+
+/*  2 section */
+
