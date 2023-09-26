@@ -423,3 +423,60 @@ section:nth-child(2){
 
 /*  2 section */
 
+section:nth-child(3){
+    padding: calc(2vw + 32px) calc(28.2vw - 80px) 80px;
+}
+section:nth-child(3) h2{
+    text-align: center;
+    margin-bottom: calc(0.6vw + 17px);
+}
+section:nth-child(3) p:not(:last-child){
+    text-align: center;
+    margin-bottom: calc(2vw + 34px);
+    font-size: calc(0.2vw + 13px);
+    line-height: 160%;
+}
+
+section:nth-child(3) form{
+    display: flex;
+    gap: 30px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section:nth-child(3) input{
+    background-color: #f4f4f4;
+    border: 0;
+    border-bottom: 2px solid rgba(32, 32, 32, 0.40);
+    padding-bottom: 20px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.form{
+    margin-top: calc(0.6vw + 47px);
+    display: flex;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form_btn{
+    flex-basis: 240px;
+    background-color: #FF9646;
+    color: #fff;
+    padding: 15px 54px;
+    
+}
+
+.form p{
+    flex-basis: calc(-3.3vw + 270px);
+    color: rgba(32, 32, 32, 0.40);
+    font-size: 13px;
+}
+
+@media (max-width: 810px){
+    .form:last-child{
+        text-align: center;
+    }
+}
