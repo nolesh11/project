@@ -421,7 +421,7 @@ section:nth-child(2){
     
 }
 
-/*  2 section */
+/*  3 section */
 
 section:nth-child(3){
     padding: calc(2vw + 32px) calc(28.2vw - 80px) 80px;
@@ -479,4 +479,73 @@ section:nth-child(3) input{
     .form:last-child{
         text-align: center;
     }
+}
+
+/* 4 section */
+
+section:nth-child(4){
+    margin-bottom: calc(4.2vw + 46px);
+    /* position: relative; */
+}
+
+/* .rectangle_treat{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+} */
+
+section:nth-child(4) h2{
+    margin-top: calc(2.6vw + 69px);
+    margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px;
+    padding-left: 20px;
+    background: url(../assets/img/Rectangle\ 291.svg);
+    background-repeat: no-repeat;
+    background-position: top 20px left -10px;
+    background-size: calc(1.3vw + 94px);
+}
+
+.treatment{
+    /* margin: 0 calc(22vw - 73px); */
+    /* margin: 0 calc(22vw - 73px); */
+    display: flex;
+    gap: 40px 85px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.treatment h5{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: calc(0.6vw + 17px);
+}
+
+.treatment p{
+    font-size: calc(0.1vw + 11px);
+    line-height: 160%;
+    margin-bottom: calc(1.3vw + 4.4px);
+}
+
+
+.reason{
+    flex-basis: 380px;
+}
+
+.specialization{
+    flex-basis: 267px;
+}
+
+.type_spec{
+    margin-bottom: calc(-0.6vw + 53px);
+    padding-left: 10px;
+    display: flex;
+    gap: 20px;
+    background: url(../assets/img/Rectangle\ 306.svg);
+    background-repeat: no-repeat;
+}
+
+.type_spec span{
+    align-self: center;
+    font-size: 18px;
+    font-weight: 600;
 }
