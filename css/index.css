@@ -17,6 +17,10 @@ h2{
     line-height: 120%;
 }
 
+section:not(.no_margin){
+    padding: 0 calc(22vw - 110px);
+}
+
 .gray{
     background-color: #F4F4F4;
 }
@@ -27,18 +31,14 @@ h2{
     background: url(../assets/img/orange.png);
     background-repeat: no-repeat;
     padding-top: calc(0.8vw + 8.36px);
-    /* padding-bottom: 100px; */
-    /* padding-right: calc(22vw - 73px); */
-    /* padding-left: calc(14.8vw - 62px); */
     background-size: calc(42.4vw - 78px) calc(-2.6vw + 901px);
-    
-    
+    background-color: #F4F4F4;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    margin: 0 calc(22vw - 73px);
+    /* margin: 0 calc(22vw - 73px); */
     margin-bottom: calc(3.4vw + 3px);
 }
 
@@ -128,7 +128,7 @@ nav{
     gap: 0 102px; 
     /* margin-left: calc(14.8vw - 62px); */
     /* margin-right: calc(22vw - 73px); */
-    padding-left: calc(14.8vw - 62px);
+    /* padding-left: calc(14.8vw - 62px); */
 
 }
 
@@ -282,13 +282,13 @@ section:nth-child(2){
 }
 
 .stairs{
-    margin: 0 calc(22vw - 73px);
-    position: relative;
+    /* margin: 0 calc(22vw - 73px); */
+    /* position: relative; */
 }
 
 .rectangle{
     position: absolute;
-    top: 23px;
+    top: 13px;
     left: -50px;
     z-index: -1;
 }
@@ -296,15 +296,22 @@ section:nth-child(2){
 .stair_type{
     display: flex;
     justify-content: center;
+    /* gap: calc(24.1vw + 399px); */
+    /* gap: 862px; */
+    /* margin: 0 calc(22vw - 73px) 40px; */
+    margin: 0 calc(19.4vw - 61px) 40px;
+    position: relative;
+
+
     justify-content: space-between;
-    margin-bottom: 40px;
+    /* justify-content: start; */
+
 }
 
-.stair_type h5{
-    font-size: calc(0.4vw + 27px);
-    font-weight: 700;
-    line-height: 120%;
-}
+/* .stair_type h2{
+    width: 100%;
+    margin-right: 862px;
+} */
 
 .stair_slider{
     display: flex;
@@ -425,6 +432,7 @@ section:nth-child(2){
 
 section:nth-child(3){
     padding: calc(2vw + 32px) calc(28.2vw - 80px) 80px;
+    /* margin: 0 calc(22vw - 73px); */
 }
 section:nth-child(3) h2{
     text-align: center;
@@ -488,21 +496,26 @@ section:nth-child(4){
     /* position: relative; */
 }
 
-/* .rectangle_treat{
+.element3{
+    position: relative;
+
+}  
+
+.element3 img{
     position: absolute;
-    top: 50px;
-    left: 200px;
-} */
+    top: 16px;
+    left: 0px;
+    z-index: -1;
+}
 
 section:nth-child(4) h2{
+    /* margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px; */
     margin-top: calc(2.6vw + 69px);
-    margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px;
+    margin-bottom: 40px;;
     padding-left: 20px;
-    background: url(../assets/img/Rectangle\ 291.svg);
-    background-repeat: no-repeat;
-    background-position: top 20px left -10px;
-    background-size: calc(1.3vw + 94px);
 }
+
+
 
 .treatment{
     /* margin: 0 calc(22vw - 73px); */
@@ -548,4 +561,36 @@ section:nth-child(4) h2{
     align-self: center;
     font-size: 18px;
     font-weight: 600;
+}
+
+/* 5 section */
+
+.orange_1{
+    background: url(../assets/img/orange.png);
+    background-repeat: no-repeat;
+    padding-top: calc(0.8vw + 8.36px);
+    background-size: calc(42.4vw - 78px) calc(-2.6vw + 901px);
+    background-position: top 0 left calc(57.5vw + 78px);
+    background-color: #f4f4f4;
+}
+
+section:nth-child(5) h2{
+    width: 252px;
+    margin-top: calc(2.6vw + 69px);
+    margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px;
+    padding-left: 20px;
+    background: url(../assets/img/Rectangle\ 291.svg);
+    background-repeat: no-repeat;
+    background-position: top 20px left -10px;
+    background-size: calc(1.3vw + 94px);
+}
+
+.fa-solid{
+    font-size: 40px;
+}
+
+.example{
+    display: flex;
+    justify-content: center;
+    gap: 30px 160px;
 }
