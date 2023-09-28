@@ -756,5 +756,35 @@ section:nth-child(4) h2{
 
 section:nth-child(6) h2{
     margin-top: calc(2vw + 72px);
+    margin-left: 20px;
 }
 
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px 99px;
+    margin-top: 45px;
+    margin-bottom: calc(3.6vw + 65px);
+
+}
+
+.advanture_img{
+    width: calc(7.9vw + 387px);
+    height: calc(7.8vw + 385px);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.advantages_info{
+    padding: 20px;
+}
+
+.advantages_info h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.advantages_info p{
+    font-size: 14px;
+    margin-bottom: calc(1.1vw + 15px);
+}
