@@ -752,23 +752,9 @@ section:nth-child(4) h2{
     }
 }
 
-/* section:nth-child(5) h2{
-    width: 252px;
-    margin-top: calc(2.6vw + 69px);
-    margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px;
-    padding-left: 20px;
-    background: url(../assets/img/Rectangle\ 291.svg);
-    background-repeat: no-repeat;
-    background-position: top 20px left -10px;
-    background-size: calc(1.3vw + 94px);
+/* 6 section */
+
+section:nth-child(6) h2{
+    margin-top: calc(2vw + 72px);
 }
 
-.fa-solid{
-    font-size: 40px;
-}
-
-.example{
-    display: flex;
-    justify-content: center;
-    gap: 30px 160px;
-} */
