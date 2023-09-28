@@ -40,6 +40,7 @@ header{
     justify-content: space-between;
     /* margin: 0 calc(22vw - 73px); */
     margin-bottom: calc(3.4vw + 3px);
+    padding-top: calc(0.6vw + 13px);
 }
 
 .header_logo{
@@ -47,11 +48,12 @@ header{
     gap: 20px;
     font-size: 14px;
     font-weight: 600;
+    /* margin-left: 20px; */
 }
 
 .header_logo img{
     width: calc(4vw + 47px);
-    
+    /* padding-left: calc(22vw - 73px); */
 }
 
 nav{
@@ -114,6 +116,11 @@ nav{
         display: block;
         margin: 20px;
     }
+
+    .header_logo img{
+        margin-left: 20px;
+        padding-top: calc(0.6vw + 13px);
+    }
 }
 
 /* @media (max-width: 420px){
@@ -126,6 +133,7 @@ nav{
     grid-template-columns: 0.5fr calc(7px + 250px);
     grid-template-areas: 'a b'  'c b';
     gap: 0 102px; 
+    /* margin: 0 calc(22vw - 110px); */
     /* margin-left: calc(14.8vw - 62px); */
     /* margin-right: calc(22vw - 73px); */
     /* padding-left: calc(14.8vw - 62px); */
@@ -513,6 +521,7 @@ section:nth-child(4) h2{
     margin-top: calc(2.6vw + 69px);
     margin-bottom: 40px;;
     padding-left: 20px;
+    /* margin: calc(2.6vw + 69px) calc(22vw - 73px); */
 }
 
 
@@ -574,7 +583,79 @@ section:nth-child(4) h2{
     background-color: #f4f4f4;
 }
 
-section:nth-child(5) h2{
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 170px 1fr;
+    grid-template-areas: 'a b' 'c b';
+}
+
+.grid_container h2{
+    grid-area: a;
+    margin-top: calc(3.3vw + 26px);
+    /* align-self: end;
+    margin-bottom: 40px; */
+}
+
+.stair_example{
+    grid-area: c;
+}
+
+.stair_details div{
+    font-size: 14px;
+    line-height: 210%;
+    color: rgba(32, 32, 32, 0.70);
+}
+.stair_details div b{
+    font-weight: 600;
+}
+
+.stair_details div:last-child{
+    font-size: 14px;
+    line-height: 210%;
+    margin-top: 28px;
+}
+.stair_details div:last-child b{
+    font-size: 23px;
+    line-height: 210%; 
+    margin: 28px 8px 45px 42px ;
+}
+
+.stair_example p{
+    font-size: calc(0.3vw + 17px);
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: calc(0.6vw + 17px);
+}
+
+.example_btn{
+    width: 263px;
+    padding: 15px 53px;
+    border-radius: 2px;
+    background: #F98C37;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.example_img{
+    grid-area: b;
+    margin-left: 13.9px;
+}
+
+.example_img img{
+    width: calc(7.3vw + 349px);
+    margin-top: calc(3.3vw + 26px);
+}
+
+.stair_slider_btn{
+    background-color: #222;
+    width: 208px;
+    margin-top: -6px;
+}
+
+
+
+/* section:nth-child(5) h2{
     width: 252px;
     margin-top: calc(2.6vw + 69px);
     margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px;
@@ -593,4 +674,4 @@ section:nth-child(5) h2{
     display: flex;
     justify-content: center;
     gap: 30px 160px;
-}
+} */
