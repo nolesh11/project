@@ -304,22 +304,10 @@ section:nth-child(2){
 .stair_type{
     display: flex;
     justify-content: center;
-    /* gap: calc(24.1vw + 399px); */
-    /* gap: 862px; */
-    /* margin: 0 calc(22vw - 73px) 40px; */
     margin: 0 calc(19.4vw - 61px) 40px;
-    position: relative;
-
-
     justify-content: space-between;
-    /* justify-content: start; */
-
+    position: relative;
 }
-
-/* .stair_type h2{
-    width: 100%;
-    margin-right: 862px;
-} */
 
 .stair_slider{
     display: flex;
@@ -519,7 +507,7 @@ section:nth-child(4){
 section:nth-child(4) h2{
     /* margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px; */
     margin-top: calc(2.6vw + 69px);
-    margin-bottom: 40px;;
+    margin-bottom: 40px;
     padding-left: 20px;
     /* margin: calc(2.6vw + 69px) calc(22vw - 73px); */
 }
@@ -572,16 +560,30 @@ section:nth-child(4) h2{
     font-weight: 600;
 }
 
+@media (min-width: 1400px){
+    .element3{
+        position: relative;
+    }  
+    
+    .element3 img{
+        position: absolute;
+        top: 500px;
+        left: 0px;
+        z-index: -1;
+    }
+}
+
 /* 5 section */
 
 .orange_1{
     background: url(../assets/img/orange.png);
     background-repeat: no-repeat;
     padding-top: calc(0.8vw + 8.36px);
-    background-size: calc(42.4vw - 78px) calc(-2.6vw + 901px);
+    background-size: calc(42.4vw - 78px) 100%;
     background-position: top 0 left calc(57.5vw + 78px);
     background-color: #f4f4f4;
 }
+/* calc(-2.6vw + 901px) */
 
 .grid_container{
     display: grid;
@@ -593,8 +595,8 @@ section:nth-child(4) h2{
 
 .stair_example_img{
     position: absolute;
-    top: 110px;
-    left: -0px;
+    top: 120px;
+    left: -60px;
     z-index: 0;
 }
 
@@ -765,7 +767,13 @@ section:nth-child(6) h2{
     gap: 21px 99px;
     margin-top: 45px;
     margin-bottom: calc(3.6vw + 65px);
+    position: relative;
+}
 
+.advantages img:nth-child(1){
+    position: absolute;
+    top: -65px;
+    z-index: -1;
 }
 
 .advanture_img{
