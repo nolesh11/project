@@ -19,6 +19,8 @@ h2{
 
 section:not(.no_margin){
     padding: 0 calc(22vw - 110px);
+
+    /* 110 */
 }
 
 .gray{
@@ -795,4 +797,60 @@ section:nth-child(6) h2{
 .advantages_info p{
     font-size: 14px;
     margin-bottom: calc(1.1vw + 15px);
+}
+
+/* 7 section */
+
+section:nth-child(7) h2{
+    padding-top: calc(2vw + 72px);
+    margin-bottom: 40px;
+    padding-left: calc(22vw - 110px);
+    margin-left: 20px;
+
+}
+
+.work_proccess{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: calc(4.6vw + 40px);
+    margin-left: 20px;
+    padding-left: calc(22vw - 110px);
+}
+
+.proccess{
+    flex-basis: calc(-5vw + 401px);
+    flex-grow: 0;
+    border: 2px solid #F4F4F4;
+    background: #FFF;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 30px calc(-1.3vw + 66px) 37px;
+}
+
+.preccess_info{
+    width: calc(-5vw + 270px);
+}
+
+.preccess_info h4{
+    margin-bottom: 8px;
+}
+
+.number{
+    position: relative;
+    margin-top: 21px;
+}
+
+.number span{
+    position: relative;
+    font-size: 36px;
+    margin-right: 27px;
+    z-index: 2;
+
+}
+
+.number_img{
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    z-index: 1;
 }
