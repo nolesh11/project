@@ -866,10 +866,11 @@ section:nth-child(7) h2{
     position: relative;
 }
 
-.feedback_grid:nth-child(3){
+.feedback_img{
     position: absolute;
-    top: 10px;
-    left: 200px;
+    top: 65px;
+    left: 800px;
+    z-index: -1;
 }
 
 .feedback_grid img{
@@ -932,8 +933,9 @@ section:nth-child(7) h2{
         grid-template-areas: 'b' 'c';
         margin-left: 20px;
         margin-right: 20px;
+        position: relative;
     }
-    .feedback_grid img{
+    .feedback_grid img:first-child{
         display: none;
     }
     .feedback_btn{
@@ -941,5 +943,11 @@ section:nth-child(7) h2{
     }
     .feedback p:not(:first-child){
         text-align: center;
+    }
+    .feedback_img{
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        /* z-index: -1; */
     }
 }
