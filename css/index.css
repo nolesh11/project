@@ -501,7 +501,7 @@ section:nth-child(4){
 
 .element3 img{
     position: absolute;
-    top: 16px;
+    top: 55px;
     left: 0px;
     z-index: -1;
 }
@@ -562,7 +562,7 @@ section:nth-child(4) h2{
     font-weight: 600;
 }
 
-@media (min-width: 1400px){
+/* @media (min-width: 1400px){
     .element3{
         position: relative;
     }  
@@ -573,7 +573,7 @@ section:nth-child(4) h2{
         left: 0px;
         z-index: -1;
     }
-}
+} */
 
 /* 5 section */
 
