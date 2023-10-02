@@ -217,7 +217,7 @@ nav{
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 1000px){
     .main_section{
         grid-template-areas: 'a' 'b' 'c';
 
