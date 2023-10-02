@@ -87,6 +87,7 @@ nav{
     font-weight: 500;
     padding: 11px 17px;
     color: #fff;
+    border-radius: 2px;
 }
 
 .burger_menu{
@@ -199,6 +200,7 @@ nav{
     line-height: 160%; 
     letter-spacing: 0.9px;
     margin-bottom: calc(-0.3vw + 41px);
+    border-radius: 2px;
 }
 
 .primary{
@@ -285,17 +287,6 @@ section:nth-child(2){
     margin-bottom: 8px;
 }
 
-.stairs{
-    /* margin: 0 calc(22vw - 73px); */
-    /* position: relative; */
-}
-
-.rectangle{
-    position: absolute;
-    top: 13px;
-    left: -50px;
-    z-index: -1;
-}
 
 .stair_type{
     display: flex;
@@ -303,6 +294,14 @@ section:nth-child(2){
     margin: 0 calc(19.4vw - 61px) 40px;
     justify-content: space-between;
     position: relative;
+    padding-left: 10px;
+}
+
+.rectangle{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    z-index: -1;
 }
 
 .stair_slider{
@@ -363,6 +362,7 @@ section:nth-child(2){
     width: 191px;
     margin: 0 auto;
     margin-top: 15px;
+    border-radius: 2px;
 }
 
 .stairs_btn_mobile{
@@ -466,7 +466,7 @@ section:nth-child(3) input{
     background-color: #FF9646;
     color: #fff;
     padding: 15px 54px;
-    
+    border-radius: 2px;
 }
 
 .form p{
@@ -500,15 +500,17 @@ section:nth-child(4){
     z-index: -1;
 }
 
-section:nth-child(4) h2{
+section:nth-child(4) h2:first-child{
     /* margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px; */
     margin-top: calc(2.6vw + 69px);
-    margin-bottom: 40px;
     padding-left: 20px;
     /* margin: calc(2.6vw + 69px) calc(22vw - 73px); */
 }
 
-
+section:nth-child(4) h2:nth-child(2){
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
 
 .treatment{
     /* margin: 0 calc(22vw - 73px); */
@@ -556,18 +558,6 @@ section:nth-child(4) h2{
     font-weight: 600;
 }
 
-/* @media (min-width: 1400px){
-    .element3{
-        position: relative;
-    }  
-    
-    .element3 img{
-        position: absolute;
-        top: 500px;
-        left: 0px;
-        z-index: -1;
-    }
-} */
 
 /* 5 section */
 
@@ -579,33 +569,41 @@ section:nth-child(4) h2{
     background-position: top 0 left calc(57.5vw + 78px);
     background-color: #f4f4f4;
 }
-/* calc(-2.6vw + 901px) */
+
 
 .grid_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 170px 1fr;
     grid-template-areas: 'a b' 'c b';
+
+}
+
+.grid_header{
     position: relative;
-}
-
-.stair_example_img{
-    position: absolute;
-    top: 120px;
-    left: -60px;
-    z-index: 0;
-}
-
-.grid_container h2{
     grid-area: a;
-    margin-top: calc(3.3vw + 26px);
     z-index: 1;
-    /* align-self: end;
-    margin-bottom: 40px; */
 }
+.grid_header img{
+    position: absolute;
+    top: 150px;
+    left: -20px;
+    z-index: -1;
+}
+
+
+.grid_container h2:first-child{
+    margin-top: calc(3.3vw + 26px);
+}
+
+/* .grid_container h2:nth-child(2){
+    position: relative;
+    z-index: 1;
+} */
 
 .stair_example{
     grid-area: c;
+    margin-top: 40px;
 }
 
 .stair_details div{
@@ -752,10 +750,20 @@ section:nth-child(4) h2{
 
 /* 6 section */
 
-section:nth-child(6) h2{
+.advanture_header{
     margin-top: calc(2vw + 72px);
     margin-left: 20px;
+    position: relative;
+    z-index: 1;
 }
+
+.advanture_header img{
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    z-index: -1;
+}
+
 
 .advantages{
     display: flex;
@@ -763,14 +771,8 @@ section:nth-child(6) h2{
     gap: 21px 99px;
     margin-top: 45px;
     margin-bottom: calc(3.6vw + 65px);
-    position: relative;
 }
 
-.advantages img:nth-child(1){
-    position: absolute;
-    top: -65px;
-    z-index: -1;
-}
 
 .advanture_img{
     width: calc(7.9vw + 387px);
@@ -795,12 +797,27 @@ section:nth-child(6) h2{
 
 /* 7 section */
 
-section:nth-child(7) h2{
+/* section:nth-child(7) h2{
     padding-top: calc(2vw + 72px);
     margin-bottom: 40px;
     padding-left: calc(22vw - 110px);
     margin-left: 20px;
 
+} */
+
+.six_section{
+    margin-top: calc(2vw + 72px);
+    margin-left: calc(22vw - 72px);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.six_section img{
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    z-index: -1;
 }
 
 .work_proccess{
@@ -857,13 +874,17 @@ section:nth-child(7) h2{
     grid-template-rows: 200px 1fr;
     gap: 0 calc(6.9vw + 1px);
     margin: calc(2vw + 72px) 0;
-    position: relative;
 }
 
-.feedback_img{
+.feedback_container{
+    position: relative;
+    height: 50px;
+}
+
+.feedback_container img{
     position: absolute;
-    top: 65px;
-    left: 800px;
+    top: 160px;
+    left: -20px;
     z-index: -1;
 }
 
@@ -873,7 +894,7 @@ section:nth-child(7) h2{
     width: calc(20.3vw + 335px);
 }
 
-.feedback_grid h2{
+.feedback_grid h2:first-child{
     grid-area: b;
     margin-top: 100px;
 }
