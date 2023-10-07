@@ -37,6 +37,7 @@ h2{
     background-color: #F4F4F4;
 }
 
+
 header{
     padding: calc(0.8vw + 8px) calc(22vw - 73px) calc(1.4vw + 12px);
     display: flex;
@@ -257,7 +258,7 @@ section:nth-child(2){
 }
 .element{
     position: absolute;
-    right: 143px;
+    right: 50px;
     top: -50px;
 }
 .element2{
@@ -475,7 +476,7 @@ section:nth-child(3) input{
 }
 
 .form_btn{
-    flex-basis: 240px;
+    /* flex-basis: 240px; */
     background-color: #FF9646;
     color: #fff;
     padding: 15px 54px;
@@ -497,8 +498,16 @@ section:nth-child(3) input{
 /* 4 section */
 
 section:nth-child(4){
+    padding: calc(8.3vw + 45px) calc(22vw - 73px);
+}
+
+section:nth-child(4) h2:last-child{
+    
+}
+
+
+/* section:nth-child(4){
     margin-bottom: calc(4.2vw + 46px);
-    /* position: relative; */
 }
 
 .element3{
@@ -514,10 +523,8 @@ section:nth-child(4){
 }
 
 section:nth-child(4) h2:first-child{
-    /* margin: calc(2.6vw + 69px) calc(22vw - 80px) 40px; */
     margin-top: calc(2.6vw + 69px);
     padding-left: 20px;
-    /* margin: calc(2.6vw + 69px) calc(22vw - 73px); */
 }
 
 section:nth-child(4) h2:nth-child(2){
@@ -526,8 +533,6 @@ section:nth-child(4) h2:nth-child(2){
 }
 
 .treatment{
-    /* margin: 0 calc(22vw - 73px); */
-    /* margin: 0 calc(22vw - 73px); */
     display: flex;
     gap: 40px 85px;
     flex-wrap: wrap;
@@ -569,7 +574,7 @@ section:nth-child(4) h2:nth-child(2){
     align-self: center;
     font-size: 18px;
     font-weight: 600;
-}
+} */
 
 
 /* 5 section */
