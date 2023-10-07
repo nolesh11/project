@@ -105,11 +105,20 @@ nav{
     display: none;
 }
 
+.mobile_nav{
+    display: none;
+}
+
+.mobile_nav.active{
+    display: block;
+    z-index: 2;
+}
+
 .mobile_nav div{
+
     font-size: calc(0.4vw + 6px);
     margin-bottom: 5px;
 }
-
 
 
 
