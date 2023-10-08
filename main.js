@@ -23,3 +23,7 @@ document.getElementById('submit').addEventListener('click', () => {
 document.getElementById('thanks_btn').addEventListener('click', () => {
     thanks.classList.remove('active')
 })
+
+document.getElementById('nav_btn').addEventListener('click', () => {
+    call_back.classList.toggle('active')
+})
