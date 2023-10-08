@@ -35,6 +35,7 @@ h2{
     padding-top: calc(0.8vw + 8.36px);
     background-size: calc(42.4vw - 78px) 95%;
     background-color: #F4F4F4;
+    position: relative;
 }
 
 
@@ -137,7 +138,10 @@ nav{
 
 .mobile_nav{
     display: none;
+}
 
+.mobile_nav.close {
+    display: none;
 }
 
 .mobile_nav.active{
@@ -181,6 +185,100 @@ nav{
     .burger_menu{
         display: block;
     }
+}
+
+.call_back {
+    display: none;
+}
+
+.call_back.active {
+    display: block;
+    width: 410px;
+    border-radius: 2px;
+    background-color: #FFF;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 59px 44px 53px;
+    z-index: 1;
+    position: absolute;
+    top: calc(3.8vw + 58px);
+    left: calc(49.6vw - 204px);
+}
+
+.cross {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+.cross img {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
+
+
+
+.call_head{
+    position: relative;
+    z-index: 1;
+}
+
+.call_head h2 {
+    font-size: 29px;
+    text-align: center;
+}
+
+.call_head img {
+    position: absolute;
+    top:20px;
+    left: 0px;
+    z-index: -1;
+}
+
+.call_back span {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.call_back form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 25px;
+}
+
+.call_back form input {
+    border: 0;
+    border-bottom: 1px solid #20202066;
+    padding: 15px 10px;
+    font-size: 14px;
+}
+
+#submit{
+    padding: 15px 85px;
+    border-radius: 2px;
+    background: #F98C37;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.call_back p {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(32, 32, 32, 0.40);
+}
+
+.call_back a {
+    text-decoration: underline;
+    font-size: 13px;
+    color: rgba(32, 32, 32, 0.40);
 }
 
 .main_section{
