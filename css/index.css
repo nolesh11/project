@@ -442,6 +442,7 @@ h1{
     width: 191px;
     padding: 15px 53px;
     margin-top: 26px;
+    cursor: pointer;
 }
 
 @media (max-width: 900px){
