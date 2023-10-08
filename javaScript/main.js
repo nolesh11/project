@@ -27,3 +27,7 @@ document.getElementById('thanks_btn').addEventListener('click', () => {
 document.getElementById('nav_btn').addEventListener('click', () => {
     call_back.classList.toggle('active')
 })
+
+document.getElementById('price_btn').addEventListener('click', () => {
+    window.open('./html/price.html', '_blank')
+})
