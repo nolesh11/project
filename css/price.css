@@ -9,3 +9,151 @@
     line-height: 140%;
 }
 
+section {
+    width: calc(55.8vw + 145px);
+    /* margin-top: 50px; */
+    margin: 50px auto;
+    border: 1px solid;
+    border: 2px solid #F4F4F4;
+    background: #FFF;
+    box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.08);
+    padding: 0 calc(8.1vw - 14px);
+    
+}
+
+section:nth-child(1) h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: calc(0.3vw + 17px);
+    font-weight: 600;
+}
+
+.line_progress {
+    width: calc(33.4vw + 159px);
+    height: calc(0.9vw + 10px);
+    border: 2px solid #F9BB88;
+    background: #FFF;
+    margin: 0 auto;
+    padding: calc(0.13vw + 0.1144px);
+}
+
+.line_orange {
+    width: 33%;
+    height: calc(0.6vw + 6px);
+    background: #F98C37;
+}
+
+.stair_choose {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: calc(1.2vw + 13px);
+    text-align: center;
+}
+
+.arrows {
+    display: none;
+}
+
+.stairs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.stair {
+    position: relative;
+}
+
+.stair_type {
+    background-color: #F4F4F4;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.stair_radio_btn {
+    width: 44px;
+    height: 44px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 48px;
+    left: 70px;
+}
+
+.center {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #E2E2E2;
+}
+
+.stair p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+.next {
+    flex-shrink: 0;
+    padding: 15px 52px;
+    border-radius: 2px;
+    background: #FF9646;
+    color: #f4f4f4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.gray_line {
+    flex-basis: calc(14.9vw - 13px);
+    height: 3px;
+    background-color: #f4f4f4;
+    align-self: center;
+}
+
+@media (max-width: 1500px){
+    .stair:last-child {
+        display: none;
+    }
+    .arrows {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .white {
+        width: 3px;
+        height: 25px;
+        background-color: black;
+        border-radius: 2px;
+    }
+    
+    .fa-solid {
+        font-size: 20px;
+        align-self: center;
+    }
+}
+@media (max-width: 1100px){
+    .stair:nth-child(4) {
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .stair:nth-child(3) {
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .stair:nth-child(2) {
+        display: none;
+    }
+}
