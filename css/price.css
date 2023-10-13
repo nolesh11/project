@@ -258,7 +258,7 @@ section:nth-child(2).active {
 /* 3 section */
 
 section:nth-child(3) {
-    /* display: none; */
+    display: none;
 }
 section:nth-child(3).active {
     display: block;
