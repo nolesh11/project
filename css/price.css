@@ -268,11 +268,29 @@ section:nth-child(2).active {
     background-color: #F4F4F4;
     width: 180px;
     height: 162px;
-    
+
 }
 
-.material_img img {
-   margin: auto;
+.first img {
+   margin: 50px 20px;
+}
+.second img {
+   margin: 28px 17px 35px 19px;
+}
+.third img {
+   margin: 25px 20px;
+}
+.fourth img {
+   margin: 30px;
+}
+.fifth img {
+   margin: 20px;
+}
+
+.type_material p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .arrows_btn {
