@@ -3,7 +3,6 @@ let second_section = document.getElementById('second')
 let third_section = document.getElementById('third')
 let last_section = document.getElementById('last')
 let first_btn = document.querySelectorAll('.stair_radio_btn')
-let second_btn = document.querySelectorAll('.type_btn')
 
 let arr1 = []
 
@@ -30,6 +29,12 @@ first_btn.forEach(function (button) {
 })
 
 let data_put = document.getElementsByClassName('data_value')[0]
+let data_put_2 = document.getElementsByClassName('data_value')[1]
+let data_put_3 = document.getElementsByClassName('data_value')[2]
+let data_put_4 = document.getElementsByClassName('data_value')[3]
+let data_put_5 = document.getElementsByClassName('data_value')[4]
+let data_put_6 = document.getElementsByClassName('data_value')[5]
+
 document.getElementById('stair_radio_btn').addEventListener('click', function () {
     let data_type = document.getElementsByClassName('data_type')[0].textContent
     data_put.innerHTML = data_type
@@ -51,14 +56,15 @@ document.getElementById('stair_radio_btn_4').addEventListener('click', function 
     data_put.innerHTML = data_type
 })
 
-// second_btn.forEach(function (button_2) {
-//     button_2.addEventListener('click', function () {
-//         second_btn.forEach(function (btn_2) {
-//             btn_2.style.backgroundColor = '#FFFFFF'
-//         })
-//         this.style.backgroundColor = '#FF9646'
-//     })
-// })
+document.getElementById('type_btn').addEventListener('click', function() {
+    let data_stair = document.getElementsByClassName('data_stair')[0].textContent
+    data_put_2.innerHTML = data_stair
+})
+document.getElementById('type_btn_2').addEventListener('click', function() {
+    let data_stair = document.getElementsByClassName('data_stair')[1].textContent
+    data_put_2.innerHTML = data_stair
+})
+
 
 
 
