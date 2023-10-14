@@ -112,10 +112,11 @@ h2 {
 .next {
     flex-basis: 235px;
     flex-shrink: 0;
-    padding: 15px 50px;
+    padding: 15px 30px;
     border-radius: 2px;
     background: #FF9646;
     color: #f4f4f4;
+    text-align: center;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
