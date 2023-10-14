@@ -222,25 +222,6 @@ section:nth-child(2).active {
     text-align: center;
 }
 
-.type_btn {
-    width: 44px;
-    height: 44px;
-    padding: 11px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    position: absolute;
-    bottom: 48px;
-    left: 70px;
-    cursor: pointer;
-}
-
-.circle {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: #E2E2E2;
-}
-
 .type_form {
     /* flex-basis: 40%; */
     display: flex;
@@ -309,18 +290,6 @@ section:nth-child(3).active {
 
 .type_material {
     position: relative;
-}
-
-.type_material_btn  {
-    width: 44px;
-    height: 44px;
-    padding: 11px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    position: absolute;
-    bottom: 48px;
-    left: 70px;
-    cursor: pointer;
 }
 
 
