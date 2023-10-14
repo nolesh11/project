@@ -4,6 +4,13 @@ let third_section = document.getElementById('third')
 let last_section = document.getElementById('last')
 let first_btn = document.querySelectorAll('.stair_radio_btn')
 
+let data_put = document.getElementsByClassName('data_value')[0]
+let data_put_2 = document.getElementsByClassName('data_value')[1]
+let data_put_3 = document.getElementsByClassName('data_value')[2]
+let data_put_4 = document.getElementsByClassName('data_value')[3]
+let data_put_5 = document.getElementsByClassName('data_value')[4]
+let data_put_6 = document.getElementsByClassName('data_value')[5]
+
 document.getElementById('back').addEventListener('click', function() {
     window.open('../index.html', '_blank')
 })
@@ -82,45 +89,24 @@ stair_radio_btn.forEach(function (for_first, index) {
 
 // 2 section btns
 
+let type_btn = document.querySelectorAll('.type_btn')
+let data_stair =document.querySelectorAll('.data_stair')
 
-
-// document.getElementById('type_btn').addEventListener('click', function() {
-//     let data_stair = document.getElementsByClassName('data_stair')[0].textContent
-//     data_put_2.innerHTML = data_stair
-
-// })
-// document.getElementById('type_btn_2').addEventListener('click', function() {
-//     let data_stair = document.getElementsByClassName('data_stair')[1].textContent
-//     data_put_2.innerHTML = data_stair
-// })
+type_btn.forEach(function (for_second, index) {
+    for_second.addEventListener('click', function () {
+        let stair_value = data_stair[index].textContent
+        data_put_2.innerHTML = stair_value
+    })
+})
 
 // 3 section btns
 
-document.getElementById('type_material_btn').addEventListener('click', function () {
-    let data_material = document.getElementsByClassName('data_material')[0].textContent
-    data_put_6.innerHTML = data_material
+let type_material_btn = document.querySelectorAll('.type_material_btn')
+let data_material = document.querySelectorAll('.data_material')
+
+type_material_btn.forEach(function (for_third, index) {
+    for_third.addEventListener('click', function () {
+        let material_value = data_material[index].textContent
+        data_put_6.innerHTML = material_value
+    })
 })
-document.getElementById('type_material_btn_2').addEventListener('click', function () {
-    let data_material = document.getElementsByClassName('data_material')[1].textContent
-    data_put_6.innerHTML = data_material
-})
-document.getElementById('type_material_btn_3').addEventListener('click', function () {
-    let data_material = document.getElementsByClassName('data_material')[2].textContent
-    data_put_6.innerHTML = data_material
-})
-document.getElementById('type_material_btn_4').addEventListener('click', function () {
-    let data_material = document.getElementsByClassName('data_material')[3].textContent
-    data_put_6.innerHTML = data_material
-})
-document.getElementById('type_material_btn_5').addEventListener('click', function () {
-    let data_material = document.getElementsByClassName('data_material')[4``].textContent
-    data_put_6.innerHTML = data_material
-})
-
-
-
-
-
-
-
-
