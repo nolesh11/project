@@ -110,14 +110,23 @@ h2 {
 }
 
 .next {
+    flex-basis: 235px;
     flex-shrink: 0;
-    padding: 15px 52px;
+    padding: 15px 50px;
     border-radius: 2px;
     background: #FF9646;
     color: #f4f4f4;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    transition: 1s;
+}
+
+.btns_cont {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+    justify-content: center;
 }
 
 .gray_line {

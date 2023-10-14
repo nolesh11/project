@@ -11,13 +11,16 @@ let data_put_4 = document.getElementsByClassName('data_value')[3]
 let data_put_5 = document.getElementsByClassName('data_value')[4]
 let data_put_6 = document.getElementsByClassName('data_value')[5]
 
+document.getElementById('back').addEventListener('click', function() {
+    window.open('../index.html', '_blank')
+})
+
 document.getElementById('next').addEventListener('click', () => {
     first_section.classList.toggle('close')
     second_section.classList.toggle('active')
 })
-document.getElementById('next_2').addEventListener('click', () => {
-    
 
+document.getElementById('next_2').addEventListener('click', () => {
     second_section.classList.remove('active')
     third_section.classList.toggle('active')
 
@@ -28,15 +31,35 @@ document.getElementById('next_2').addEventListener('click', () => {
     data_put_3.innerHTML = prop
     data_put_4.innerHTML = prop_2
     data_put_5.innerHTML = prop_3
-
-
 })
+
 document.getElementById('last_btn').addEventListener('click', () => {
     third_section.classList.remove('active')
     last_section.classList.toggle('active')
-
-
 })
+
+document.getElementById('back_2').addEventListener('click', function () {
+    second_section.classList.remove('active')
+    first_section.classList.remove('close')
+    first_section.classList.toggle('open')
+})
+
+document.getElementById('back_3').addEventListener('click', function () {
+    third_section.classList.remove('active')
+    second_section.classList.toggle('active')
+})
+
+document.getElementById('back_4').addEventListener('click', function () {
+    last_section.classList.remove('active')
+    third_section.classList.toggle('active')
+})
+
+document.getElementById('last_btn_1').addEventListener('click', function () {
+    alert('Ваша заявка было успешно отправлена')
+    window.open('../index.html', '_blank')
+})
+
+
 
 first_btn.forEach(function (button) {
     button.addEventListener('click', function () {
