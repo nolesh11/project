@@ -4,13 +4,6 @@ let third_section = document.getElementById('third')
 let last_section = document.getElementById('last')
 let first_btn = document.querySelectorAll('.stair_radio_btn')
 
-let data_put = document.getElementsByClassName('data_value')[0]
-let data_put_2 = document.getElementsByClassName('data_value')[1]
-let data_put_3 = document.getElementsByClassName('data_value')[2]
-let data_put_4 = document.getElementsByClassName('data_value')[3]
-let data_put_5 = document.getElementsByClassName('data_value')[4]
-let data_put_6 = document.getElementsByClassName('data_value')[5]
-
 document.getElementById('back').addEventListener('click', function() {
     window.open('../index.html', '_blank')
 })
@@ -74,38 +67,32 @@ first_btn.forEach(function (button) {
 
 // 1 section btns
 
-document.getElementById('stair_radio_btn').addEventListener('click', function () {
-    let data_type = document.getElementsByClassName('data_type')[0].textContent
-    data_put.innerHTML = data_type
-})
-document.getElementById('stair_radio_btn_1').addEventListener('click', function () {
-    let data_type = document.getElementsByClassName('data_type')[1].textContent
-    data_put.innerHTML = data_type
-})
-document.getElementById('stair_radio_btn_2').addEventListener('click', function () {
-    let data_type = document.getElementsByClassName('data_type')[2].textContent
-    data_put.innerHTML = data_type
-})
-document.getElementById('stair_radio_btn_3').addEventListener('click', function () {
-    let data_type = document.getElementsByClassName('data_type')[3].textContent
-    data_put.innerHTML = data_type
-})
-document.getElementById('stair_radio_btn_4').addEventListener('click', function () {
-    let data_type = document.getElementsByClassName('data_type')[4].textContent
-    data_put.innerHTML = data_type
+
+let stair_radio_btn = document.querySelectorAll('.stair_radio_btn')
+let data_type = document.querySelectorAll('.data_type')
+
+stair_radio_btn.forEach(function (for_first, index) {
+    for_first.addEventListener('click', function () {
+        let type_value = data_type[index].textContent
+
+        data_put.innerHTML = type_value
+        
+    })
 })
 
 // 2 section btns
 
-document.getElementById('type_btn').addEventListener('click', function() {
-    let data_stair = document.getElementsByClassName('data_stair')[0].textContent
-    data_put_2.innerHTML = data_stair
 
-})
-document.getElementById('type_btn_2').addEventListener('click', function() {
-    let data_stair = document.getElementsByClassName('data_stair')[1].textContent
-    data_put_2.innerHTML = data_stair
-})
+
+// document.getElementById('type_btn').addEventListener('click', function() {
+//     let data_stair = document.getElementsByClassName('data_stair')[0].textContent
+//     data_put_2.innerHTML = data_stair
+
+// })
+// document.getElementById('type_btn_2').addEventListener('click', function() {
+//     let data_stair = document.getElementsByClassName('data_stair')[1].textContent
+//     data_put_2.innerHTML = data_stair
+// })
 
 // 3 section btns
 
