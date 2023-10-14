@@ -30,12 +30,14 @@ h2{
 /* 1 section */
 
 .orange{
-    background: url(../assets/img/orange.png);
+    background-image: url(../assets/img/orange.png);
     background-repeat: no-repeat;
     padding-top: calc(0.8vw + 8.36px);
-    background-size: calc(42.4vw - 78px) 95%;
+    background-size: calc(42.4vw - 78px) 100%;
     background-color: #F4F4F4;
     position: relative;
+    height: 90vh;
+    margin-bottom: 80px;
 }
 
 
