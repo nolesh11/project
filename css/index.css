@@ -577,6 +577,13 @@ section:nth-child(2){
     border: 2px solid #F4F4F4;
     transition: 1s;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.stair_price img:nth-child(1) {
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
 
 .stair_price img{
