@@ -33,6 +33,7 @@ document.getElementById('price_btn').addEventListener('click', () => {
 })
 
 
+
 // document.addEventListener('DOMContentLoaded', function() {
 //     const slidesContainer = document.querySelector('.stairs_variaty');
 //     const slides = document.querySelectorAll('.stair_price');
