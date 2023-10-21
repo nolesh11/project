@@ -597,12 +597,12 @@ section:nth-child(2){
     right: 0;
     z-index: -1;
 }
-.stair_price:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
-    /* display: none; */
-    /* transform: translateX(100%);
+/* .stair_price:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+    display: none;
+    transform: translateX(100%);
     opacity: 0;
-    pointer-events: none; */
-}
+    pointer-events: none;
+} */
 
 .stair_price img{
     padding: 46px 35px 0;
